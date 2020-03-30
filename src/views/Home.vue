@@ -7,10 +7,10 @@
       >
         <div class="xl:max-w-lg xl:ml-auto">
           <!-- Logo -->
-          <img class="h-10" src="images/download.svg" alt="" />
+          <img class="h-10" src="images/logo.svg" alt="" />
 
           <!-- Banner Image -->
-          <img
+          <images
             class="mt-6 rounded-lg shadow-xl  sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden "
             src="images/beach-work.jpg"
             alt=""
@@ -53,11 +53,151 @@
         />
       </div>
     </div>
+
+    <div class="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8">
+      <h2 class="text-xl text-gray-900">Popular destinations</h2>
+      <p class="text-gray-600">
+        A selection of great work-friendly cities with lots to see and explore.
+      </p>
+      <!-- Card Box -->
+      <div class="flex flex-wrap mx-4">
+        <!-- Cards Begin-->
+        <div class="mt-6 w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div
+            class="flex items-center rounded-lg bg-white shadow-lg overflow-hidden"
+          >
+            <img
+              class="h-32 w-32 flex-shrink-0"
+              src="/images/toronto.jpg"
+              alt="Toronto skyline"
+            />
+            <div class="px-6 py-4">
+              <h3 class="text-lg font-semibold text-gray-800">
+                Toronto
+              </h3>
+              <p class="text-gray-600">
+                120
+              </p>
+              <div class="mt-4">
+                <a
+                  href="#"
+                  class="text-indigo-500 hover:text-indigo-400 font-semibold text-sm"
+                  >Explore 76 properties</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div
+            class="flex items-center rounded-lg bg-white shadow-lg overflow-hidden"
+          >
+            <img
+              class="h-32 w-32 flex-shrink-0"
+              src="/images/toronto.jpg"
+              alt="Toronto skyline"
+            />
+            <div class="px-6 py-4">
+              <h3 class="text-lg font-semibold text-gray-800">
+                Toronto
+              </h3>
+              <p class="text-gray-600">
+                120
+              </p>
+              <div class="mt-4">
+                <a
+                  href="#"
+                  class="text-indigo-500 hover:text-indigo-400 font-semibold text-sm"
+                  >Explore 76 properties</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div
+            class="flex items-center rounded-lg bg-white shadow-lg overflow-hidden"
+          >
+            <img
+              class="h-32 w-32 flex-shrink-0"
+              src="/images/toronto.jpg"
+              alt="Toronto skyline"
+            />
+            <div class="px-6 py-4">
+              <h3 class="text-lg font-semibold text-gray-800">
+                Toronto
+              </h3>
+              <p class="text-gray-600">
+                120
+              </p>
+              <div class="mt-4">
+                <a
+                  href="#"
+                  class="text-indigo-500 hover:text-indigo-400 font-semibold text-sm"
+                  >Explore 76 properties</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Cards End -->
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Home"
+  name: "Home",
+  data() {
+    return {
+      popularDestinations: [
+        {
+          city: "Toronto",
+          averagePrice: 120,
+          propertyCount: 76,
+          imageUrl: "/images/toronto.jpg",
+          imageAlt: "Toronto skyline"
+        },
+        {
+          city: "Malibu",
+          averagePrice: 215,
+          propertyCount: 43,
+          imageUrl: "/images/malibu.jpg",
+          imageAlt: "Cliff in Malibu"
+        },
+        {
+          city: "Chicago",
+          averagePrice: 130,
+          propertyCount: 115,
+          imageUrl: "/images/chicago.jpg",
+          imageAlt: "Chicago skyline"
+        },
+        {
+          city: "Seattle",
+          averagePrice: 135,
+          propertyCount: 63,
+          imageUrl: "/images/seattle.jpg",
+          imageAlt: "Seattle skyline"
+        },
+        {
+          city: "Colorado",
+          averagePrice: 85,
+          propertyCount: 47,
+          imageUrl: "/images/colorado.jpg",
+          imageAlt: "Lake in Colorado"
+        },
+        {
+          city: "Miami",
+          averagePrice: 115,
+          propertyCount: 86,
+          imageUrl: "/images/miami.jpg",
+          imageAlt: "Beach in Miami"
+        }
+      ]
+    };
+  }
 };
 </script>

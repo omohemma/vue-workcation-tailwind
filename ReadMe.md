@@ -44,3 +44,9 @@
 ___
 
 > npx tailwind init tailwind-full.config.js --full
+
+## Designing with Tailwind CSS Optimizing for Production with Purgecss
+___
+
+- Install Purge Css
+  >   

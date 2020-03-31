@@ -1,19 +1,17 @@
 <template>
-  <div class="">
+  <div class>
     <!-- Container -->
     <div class="flex bg-gray-100">
-      <div
-        class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:w-1/2 lg:max-w-full lg:py-24 lg:px-12"
-      >
+      <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:w-1/2 lg:max-w-full lg:py-24 lg:px-12">
         <div class="xl:max-w-lg xl:ml-auto">
           <!-- Logo -->
-          <img class="h-10" src="images/logo.svg" alt="" />
+          <img class="h-10" src="images/logo-blue.svg" alt />
 
           <!-- Banner Image -->
           <img
-            class="mt-6 rounded-lg shadow-xl  sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden "
+            class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-72 sm:w-full sm:object-cover sm:object-center lg:hidden"
             src="images/beach-work.jpg"
-            alt=""
+            alt
           />
 
           <!-- Heading -->
@@ -21,9 +19,8 @@
             class="mt-6 text-2xl font-bold text-gray-900 leading-tight sm:mt-8 sm:text-3xl lg:text-2xl xl:text-2xl"
           >
             You can work from anywhere.
-            <br class="hidden lg:inline" /><span class="text-indigo-500"
-              >Take advantage of it.</span
-            >
+            <br class="hidden lg:inline" />
+            <span class="text-brand-blue">Take advantage of it.</span>
           </h1>
 
           <!-- Paragraph/Subheading -->
@@ -36,10 +33,8 @@
 
           <!-- Call To Action -->
           <div class="mt-4 sm:mt-6">
-            <a href="#" class=" btn btn-indigo shadow-lg sm:text-base "
-              >Book your escape</a
-            >
-            <a href="#" class="btn  btn-gray sm:text-base ">Learn more</a>
+            <a href="#" class="btn btn-indigo shadow-lg sm:text-base">Book your escape</a>
+            <a href="#" class="btn btn-gray sm:text-base">Learn more</a>
           </div>
         </div>
       </div>
@@ -49,16 +44,16 @@
         <img
           class="absolute inset-0 w-full h-full object-cover object-center"
           src="images/beach-work.jpg"
-          alt=""
+          alt
         />
       </div>
     </div>
 
     <div class="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8">
       <h2 class="text-xl text-gray-900">Popular destinations</h2>
-      <p class="text-gray-600">
-        A selection of great work-friendly cities with lots to see and explore.
-      </p>
+      <p
+        class="text-gray-600"
+      >A selection of great work-friendly cities with lots to see and explore.</p>
       <!-- Card Box -->
       <div class="flex flex-wrap mx-4">
         <!-- Cards Begin-->

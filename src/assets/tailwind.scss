@@ -13,7 +13,8 @@
   }
 
   &-indigo {
-    @apply bg-indigo-500 text-white;
+    // @apply bg-indigo-500 text-white;
+    @apply bg-brand-blue text-white;
 
     &:hover {
       @apply bg-indigo-400;

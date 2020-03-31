@@ -10,7 +10,7 @@
           <img class="h-10" src="images/logo.svg" alt="" />
 
           <!-- Banner Image -->
-          <images
+          <img
             class="mt-6 rounded-lg shadow-xl  sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden "
             src="images/beach-work.jpg"
             alt=""

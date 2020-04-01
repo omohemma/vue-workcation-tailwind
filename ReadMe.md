@@ -50,3 +50,8 @@ ___
 
 - Install Purge Css
   >   
+
+## Working with SVG
+- Optimizing svg before use
+ > Link: https://jakearchibald.github.io/svgomg/
+ > Always try to export your svg's as square

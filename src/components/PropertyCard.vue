@@ -3,11 +3,21 @@
     <img :src="property.imageUrl" alt="property.imageAlt" />
 
     <div class="p-6">
-      <div
-        class="text-gray-600 text-xs uppercase font-semibold tracking-wide"
-      >{{ property.beds }} beds &bull; {{ property.baths }} baths</div>
+      <div class="flex items-baseline">
+        <!-- 
+          badge could be -> bg-teal-500 text-white 
+          yet it competes with the main focus of the 
+          card which is Property Title
+        -->
+        <span
+          class="inline-block bg-teal-200 text-teal-800 px-2 rounded-full text-xs uppercase font-semibold tracking-wide"
+        >New</span>
+        <div
+          class="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide"
+        >{{ property.beds }} beds &bull; {{ property.baths }} baths</div>
+      </div>
 
-      <h4 class="font-semibold text-lg leading-tight truncate">{{ property.title }}</h4>
+      <h4 class="mt-1 font-semibold text-lg leading-tight truncate">{{ property.title }}</h4>
 
       <div class="mt-1">
         {{ property.formattedPrice }}

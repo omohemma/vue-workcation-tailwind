@@ -1,6 +1,11 @@
 <template>
   <div class="bg-white rounded-lg overflow-hidden border shadow-lg">
-    <img :src="property.imageUrl" alt="property.imageAlt" />
+    <!-- IE 11 Hack -->
+    <!-- <div
+      class="h-48 bg-cover bg-center"
+      :style="{ backgroundImage: `url('${property.imageUrl}')` }"
+    ></div>-->
+    <img class="h-48 w-full object-cover" :src="property.imageUrl" alt="property.imageAlt" />
 
     <div class="p-6">
       <div class="flex items-baseline">

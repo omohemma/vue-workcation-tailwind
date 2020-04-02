@@ -25,6 +25,9 @@
       />
     </div>
 
+    <!-- Overlap card on image
+    using negative margin
+    -->
     <div class="relative px-4 -mt-12">
       <div class="bg-white p-6 rounded-lg shadow-lg">
         <div class="flex items-baseline">

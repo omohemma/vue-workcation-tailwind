@@ -8,7 +8,14 @@
       :style="{ backgroundImage: `url('${property.imageUrl}')` }"
     ></div>-->
 
-    <!-- Maintain aspect ratio of image across different screens by using absolute positioning -->
+    <!-- Maintain aspect ratio of image across 
+    different screens by using absolute positioning
+
+    -> Wrap image into a parent div and 
+    make it relative to its paarent and then make the image 
+    occupy full height.
+    
+    -->
 
     <div class="bg-red-500 relative pb-2/3">
       <img

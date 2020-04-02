@@ -1,11 +1,22 @@
 <template>
   <div class="bg-white rounded-lg overflow-hidden border shadow-lg">
+    <!-- overflow-hidden make images wrap with div container -->
+
     <!-- IE 11 Hack -->
     <!-- <div
       class="h-48 bg-cover bg-center"
       :style="{ backgroundImage: `url('${property.imageUrl}')` }"
     ></div>-->
-    <img class="h-48 w-full object-cover" :src="property.imageUrl" alt="property.imageAlt" />
+
+    <!-- Maintain aspect ratio of image across different screens by using absolute positioning -->
+
+    <div class="bg-red-500 relative pb-2/3">
+      <img
+        class="absolute h-full w-full object-cover"
+        :src="property.imageUrl"
+        :alt="property.imageAlt"
+      />
+    </div>
 
     <div class="p-6">
       <div class="flex items-baseline">

@@ -1,7 +1,8 @@
 <template>
   <div class="sm:relative">
     <button
-      class="block h-8 w-8 rounded-full overflow-hidden border-2 border-gray-600 focus:outline-none focus:border-white"
+      v-on:click="isOpen = !isOpen"
+      class="relative z-10 block h-8 w-8 rounded-full overflow-hidden border-2 border-gray-600 focus:outline-none focus:border-white"
     >
       <img
         class="w-full h-full object-cover"
@@ -10,7 +11,14 @@
       />
     </button>
 
-    <div class="sm:absolute sm:right-0 w-48 mt-2 bg-white rounded-lg py-2 shadow-xl">
+    <button
+      v-if="isOpen"
+      @click="isOpen = !isOpen"
+      class="fixed w-full h-full bg-black opacity-50 inset-0"
+      tabindex="-1"
+    ></button>
+
+    <div v-if="isOpen" class="sm:absolute sm:right-0 w-48 mt-2 bg-white rounded-lg py-2 shadow-xl">
       <a href="#" class="block px-4 py-2 hover:bg-indigo-500 hover:text-white">Account Settings</a>
       <a href="#" class="block px-4 py-2 hover:bg-indigo-500 hover:text-white">Support</a>
       <a href="#" class="block px-4 py-2 hover:bg-indigo-500 hover:text-white">Sign Out</a>
@@ -20,6 +28,22 @@
 
 <script>
 export default {
-  name: "Account Dropdown"
+  name: "Account Dropdown",
+  data() {
+    return {
+      isOpen: false
+    };
+  },
+  created() {
+    const handleEscape = e => {
+      if (e.key === "Esc" || e.key === "Escape") {
+        this.isOpen = false;
+      }
+    };
+    document.addEventListener("keydown", handleEscape);
+    this.$once("hook:beforeDestroy", () => {
+      document.removeEventListener("keydown", handleEscape);
+    });
+  }
 };
 </script>

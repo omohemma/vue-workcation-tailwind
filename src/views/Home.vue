@@ -33,8 +33,8 @@
 
           <!-- Call To Action -->
           <div class="mt-4 sm:mt-6">
-            <a :href="/cards/" class="btn btn-indigo shadow-lg sm:text-base">Book your escape</a>
-            <a :href="/navigation/" class="btn btn-gray sm:text-base">Learn more</a>
+            <a :href="/cards/" class="btn btn-indigo shadow-lg sm:text-base mt-2">Book your escape</a>
+            <a :href="/navigation/" class="btn btn-gray sm:text-base mt-2">Learn more</a>
           </div>
         </div>
       </div>

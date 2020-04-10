@@ -41,13 +41,19 @@
         href="#"
         class="mt-1 block text-white font-semibold py-1 px-2 rounded hover:bg-gray-800 sm:mt-0 sm:ml-2"
       >Messages</a>
+
+      <AccountDropdown class="sm:ml-6" />>
     </div>
   </header>
 </template>
 
 <script>
+import AccountDropdown from "@/components/AccountDropdown.vue";
 export default {
   name: "Components Preview",
+  components: {
+    AccountDropdown
+  },
   data() {
     return {
       isOpened: false
